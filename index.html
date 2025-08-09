@@ -30,6 +30,13 @@
       font-size: 1.1rem;
       margin-bottom: 2rem;
     }
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
     a {
       background-color: #007acc;
       color: white;
@@ -38,6 +45,8 @@
       border-radius: 5px;
       font-weight: bold;
       transition: background-color 0.3s ease;
+      min-width: 340px;
+      text-align: center;
     }
     a:hover {
       background-color: #005fa3;
@@ -48,7 +57,10 @@
   <div class="container">
     <h1>Welcome to the Playwright Allure Test Report</h1>
     <p>Click the button below to view the test results.</p>
-    <a href="allure-report/index.html" target="_blank">Playwright Allure example report</a>
+    <div class="button-group">
+      <a href="allure-report/index.html" target="_blank">Playwright Allure example report</a>
+      <a href="allure-report-sharding/index.html" target="_blank" id="foobar-btn">Playwright Allure report (sharding)</a>
+    </div>
   </div>
 </body>
 </html>
